@@ -1,0 +1,347 @@
+body {
+  font-family: Circular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+body header {
+  background-image: url("../img/header.jpg");
+  height: 600px;
+  width: 100%;
+  background-position: center center;
+  background-repeat: none;
+  background-size: cover;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: space-between;
+}
+body header #topbar {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-height: 170px;
+}
+body header #topbar nav {
+  display: flex;
+  width: 700px;
+  margin: 0;
+}
+body header #topbar nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 100%;
+  text-align: center;
+  margin-left: -2.5em;
+}
+body header #topbar nav ul li {
+  color: #fff;
+  font-weight: bold;
+  list-style: none;
+  padding: 0.5em 0;
+  cursor: pointer;
+  text-align: center;
+}
+body header #topbar nav ul li.register {
+  padding: 0.5em 2em;
+  border: 2px solid #fff;
+  border-radius: 4px;
+}
+body header #topbar nav ul li.register:hover {
+  background: rgba(0,0,0,0.7);
+}
+body header #topbar #logo {
+  height: 60px;
+  width: 60px;
+  margin: 0;
+}
+body header #topbar #logo img {
+  margin: 10px;
+  width: 40px;
+  height: 40px;
+}
+body header #title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1.5em;
+  text-shadow: -1px 0 #808080, 0 1px #808080, 1px 0 #808080, 0 -1px #808080;
+}
+body header #title h1 {
+  font-size: 3.8em;
+  margin-top: 0.5em;
+}
+@media (max-width: 700px) {
+  body header #title h1 {
+    font-size: 2.3em;
+  }
+}
+body header #title small {
+  line-height: 0.5em;
+  font-size: 15px;
+  position: relative;
+}
+body header #title div {
+  width: 100%;
+  margin-top: -3em;
+}
+body header #title div button {
+  height: 45px;
+  width: 180px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 0.95em;
+  background: rgba(240,240,240,0.5);
+  border: none;
+  border-radius: 3px;
+}
+body header #title div button:hover {
+  background-color: rgba(0,0,0,0.5);
+  border: 1px solid #fff;
+}
+body header #filter {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+body header #filter form {
+  background: rgba(0,0,0,0.5);
+  height: 125px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+body header #filter form div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+body header #filter form div input {
+  height: 35px;
+  width: 250px;
+  margin: 3px -2px;
+  border: 1px solid #e7e6e6;
+  font-size: 1.1em;
+  padding: 0 0.5em;
+}
+body header #filter form div input:focus {
+  border: 1px solid #e7e6e6 !important;
+}
+body header #filter form div button {
+  height: 37px;
+  width: 100px;
+  cursor: pointer;
+  background: #ff4747;
+  border: 1px solid #f42f2f;
+  color: #fff;
+  font-weight: bold;
+  font-size: 15px;
+}
+body header #filter form div button:hover {
+  background: #ff5151;
+}
+body section #pasos {
+  text-align: center;
+  background: #f6f6f6;
+  padding-top: 1em;
+  padding-bottom: 0.5em;
+}
+body section #pasos img {
+  max-width: 100%;
+}
+body section #welcome {
+  display: flex;
+  justify-content: center;
+  background: #f6f6f6;
+  padding-bottom: 2em;
+}
+body section #welcome div {
+  width: 900px;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0;
+}
+@media (max-width: 874px) {
+  body section #welcome div {
+    justify-content: center;
+    width: 510px;
+  }
+}
+body section #welcome div figure {
+  width: 510px !important;
+  background: #000;
+  background-position: bottom;
+  background-repeat: none;
+  background-size: cover;
+  margin: 0;
+  height: 300px;
+}
+body section #welcome div #info {
+  display: block;
+  padding: 2em;
+  width: 300px;
+  background: #fff;
+  height: 200px;
+  text-align: center;
+  padding-top: 1em;
+}
+@media (max-width: 874px) {
+  body section #welcome div #info {
+    margin-bottom: 2em;
+  }
+}
+body section #welcome div #info h2,
+body section #welcome div #info p {
+  text-align: left;
+  word-spacing: 4px;
+}
+body section #welcome div #info h2 {
+  font-size: 26px;
+  color: #2c2c2c;
+}
+body section #welcome div #info p {
+  font-size: 14px;
+}
+body section #welcome div #info button {
+  border: 1px solid #000;
+  background: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 1em;
+  width: 230px;
+  margin-top: 1em;
+}
+body section #welcome div #info button:hover {
+  background: rgba(0,0,0,0.9);
+  color: #fff;
+}
+body section #content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+body section #content .botonera {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 2em;
+}
+body section #content .botonera button {
+  padding: 1em;
+  margin: 5px;
+  width: 200px;
+  background: #fff;
+  border: 1px dashed #808080;
+  cursor: pointer;
+}
+body section #content .botonera button:hover {
+  background: #92e0fd;
+  border: 1px dashed #5cc7ef;
+}
+body section #content .botonera button.active {
+  background: #5cc7ef;
+  border: 1px dashed #2fb3e4;
+}
+body section #content .botonera button.active:hover {
+  background: #2fb3e4;
+  border: 1px dashed #1994c2;
+}
+body section #content #articles {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 1100px;
+  padding-top: 1em;
+}
+body section #content #articles article {
+  width: 305px;
+  height: 350px;
+  background: #fff;
+  margin: 1em 0;
+  cursor: pointer;
+  padding: 0;
+  transition: all 0.25s linear !important;
+}
+body section #content #articles article .web {
+  position: relative;
+  top: -150px;
+  text-align: center;
+}
+body section #content #articles article .web a {
+  color: #636161;
+  text-decoration: none;
+  font-size: 0.85em;
+  cursor: help;
+}
+body section #content #articles article .price {
+  background: rgba(0,0,0,0.8);
+  width: 130px;
+  height: 40px;
+  position: relative;
+  top: -250px;
+  right: -175px;
+  z-index: 10;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body section #content #articles article .price span {
+  font-weight: bold;
+  font-size: 0.85em;
+}
+body section #content #articles article #title {
+  position: relative;
+  top: -120px;
+  width: 190px;
+  right: -110px;
+}
+body section #content #articles article #title h4 {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+body section #content #articles article #title p {
+  margin-top: -1.5em;
+  font-size: 0.9em;
+  color: #7d7d7d;
+}
+body section #content #articles article figure.example {
+  height: 250px;
+  width: 100%;
+  background: #000;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-size: auto 100% !important;
+}
+body section #content #articles article figure.logo {
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  background-size: 100% auto !important;
+  border-radius: 100%;
+  width: 80px;
+  height: 80px;
+  position: relative;
+  border: 2px solid #fff;
+  box-shadow: 0 0 10px #000;
+  top: -50px;
+  left: -25px;
+}
+body section #content #articles article:hover {
+  box-shadow: 0 0 10px #000;
+  transform: scale(1.05);
+}

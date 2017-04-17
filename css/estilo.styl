@@ -1,0 +1,302 @@
+body
+  font-family Circular,"Helvetica Neue",Helvetica,Arial,sans-serif 
+  margin 0
+  padding 0
+  //min-height 2000px
+  overflow-x hidden
+  header 
+    background-image url('../img/header.jpg')
+    height 600px
+    width 100%
+    background-position center center
+    background-repeat none 
+    background-size cover
+    display flex
+    flex-wrap wrap
+    justify-content center
+    align-items space-between
+    #topbar
+      //background black
+      width 100%
+      //height 50px
+      display flex
+      flex-wrap wrap
+      justify-content space-between
+      max-height 170px
+      nav 
+        display flex
+        //flex-wrap wrap
+        width 700px
+        //background black
+        //height 50px
+        margin 0
+        ul
+          display flex
+          flex-wrap wrap
+          justify-content space-around
+          align-items flex-start
+          width 100%
+          text-align center
+          margin-left -2.5em
+          li 
+            color white
+            font-weight bold
+            list-style none
+            padding .5em 0
+            cursor pointer
+            text-align center
+            &.register
+              padding .5em 2em
+              border 2px solid white
+              border-radius 4px
+              &:hover
+                background rgba(0,0,0,.7)
+      #logo
+        //background black
+        height 60px
+        width 60px
+        margin 0
+        img 
+          margin 10px
+          width 40px
+          height 40px
+    #title
+      display flex
+      justify-content center
+      align-items center
+      flex-wrap wrap
+      color white
+      text-transform uppercase
+      text-align center
+      //max-height 30px
+      line-height 1.5em
+      text-shadow -1px 0 gray, 0 1px gray, 1px 0 gray, 0 -1px gray;
+      h1
+        font-size 3.8em
+        margin-top .5em
+        //height -1em !important
+        @media(max-width 700px)
+          font-size 2.3em
+      small
+        line-height .5em
+        font-size 15px
+        position relative
+      div
+        width 100%
+        margin-top -3em
+        button
+          height 45px
+          width 180px
+          color white
+          cursor pointer
+          font-weight bold
+          font-size .95em
+          background rgba(240,240,240,.5)
+          border none
+          border-radius 3px
+          &:hover
+            background-color rgba(0,0,0,.5)
+            border 1px solid white
+    #filter
+      width 100%
+      display flex 
+      align-items flex-end
+      form
+        background rgba(0,0,0,.5)
+        height 125px
+        width 100%
+        display flex
+        flex-wrap wrap
+        justify-content center
+        align-items center
+        div
+          width 100%
+          display flex
+          justify-content center
+          align-items center
+          flex-wrap wrap
+          text-align center
+          input
+            height 35px
+            width 250px
+            margin 3px -2px
+            border 1px solid #E7E6E6
+            font-size 1.1em
+            padding 0 .5em
+            &:focus
+              border 1px solid #E7E6E6 !important
+          button 
+            height 37px
+            width 100px
+            cursor pointer
+            background #FF4747
+            border 1px solid #F42F2F
+            color white
+            font-weight bold
+            font-size 15px
+            &:hover
+              background #FF5151
+  section 
+    #pasos 
+      text-align center
+      background #f6f6f6
+      padding-top 1em
+      padding-bottom .5em
+      img 
+        max-width 100%
+    #welcome
+      display flex 
+      justify-content center
+      background #f6f6f6
+      padding-bottom 2em
+      div
+        width 900px
+        //height 310px
+        background white
+        display flex
+        justify-content space-between 
+        flex-wrap wrap
+        padding 0
+        @media(max-width 874px)
+          justify-content center
+          width 510px
+        figure 
+          width 510px !important
+          background black
+          //height 100%
+          background-position bottom
+          background-repeat none 
+          background-size cover
+          margin 0
+          height 300px
+        #info
+          display block
+          padding 2em
+          width 300px
+          background white
+          height 200px
+          text-align center
+          padding-top 1em
+          @media(max-width 874px)
+            margin-bottom 2em
+          h2, p 
+            text-align left
+            word-spacing 4px
+          h2 
+            font-size 26px
+            color #2C2C2C
+          p 
+            font-size 14px
+          button 
+            border 1px solid black
+            background white
+            cursor pointer
+            border-radius 5px
+            padding 1em
+            width 230px
+            margin-top 1em
+            &:hover 
+              background rgba(0,0,0,.9)
+              color white
+    #content 
+      display flex 
+      justify-content center
+      flex-wrap wrap
+      .botonera
+        width 100%
+        display flex 
+        justify-content center
+        margin-top 2em
+        button
+          padding 1em
+          margin 5px
+          width 200px
+          background white
+          border 1px dashed gray
+          cursor pointer
+          &:hover
+            background #92E0FD
+            border 1px dashed #5CC7EF
+          &.active
+            background #5CC7EF
+            border 1px dashed #2FB3E4
+            &:hover
+              background #2FB3E4
+              border 1px dashed #1994C2
+      #articles
+        display flex 
+        justify-content space-around
+        flex-wrap wrap
+        width 1100px
+        padding-top 1em
+        article
+          width 305px 
+          height 350px
+          background white
+          margin 1em 0
+          cursor pointer
+          padding 0
+          //border 1px solid gray
+          transition: all .25s linear !important
+          .web 
+            position relative
+            top -150px
+            text-align center
+            a
+              color #636161
+              text-decoration none
+              font-size .85em
+              cursor help
+          .price
+            background rgba(0,0,0,.8)
+            width 130px 
+            height 40px
+            position relative
+            top -250px
+            right -175px
+            z-index 10
+            color white
+            display flex
+            justify-content center
+            align-items center
+            span 
+              font-weight bold
+              font-size .85em
+          #title 
+            position relative
+            top -120px 
+            //background blue
+            width 190px
+            right -110px
+            h4
+              font-weight bold
+              font-size 1.1em
+            p 
+              margin-top -1.5em
+              font-size .9em
+              color #7D7D7D
+          figure.example
+            height 250px
+            width 100%
+            background black
+            margin 0
+            //background url('../img/party.jpg')
+            //background-position center 75% !important
+            background-repeat no-repeat
+            background-size auto 100% !important
+          figure.logo
+            //background white url('../img/logo/1.jpg')
+            background-position center center !important
+            background-repeat no-repeat !important
+            background-size 100% auto !important
+            border-radius 100%
+            width 80px
+            height 80px
+            position relative
+            border 2px solid white
+            box-shadow 0 0 10px black
+            top -50px
+            left -25px
+          &:hover
+            box-shadow 0 0 10px black
+            transform scale(1.05)
